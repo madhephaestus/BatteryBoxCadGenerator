@@ -24,7 +24,7 @@ CSG generate(){
 		println "BatteryBox value "+key+" "+measurments.get(key);
 }
 	// Stub of a CAD object
-	CSG part = new Cube(widthValue,lengthValue,heightValue).toCSG()
+	CSG part = new Cube(widthValue,lengthValue,heightValue+3).toCSG()
 	CSG lip = new Cube(widthValue,3,heightValue-2).toCSG()
 				.toYMax()
 				.movey(part.getMinY())
